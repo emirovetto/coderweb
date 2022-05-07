@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+font-family: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-color: rgb(2, 3, 2)
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 1.2rem;
+  
+}
+
+h2 {
+  color: #66cbb3;
+  text-align: center;
+}
+
+h3 {
+  font-size:medium;
+  color: aliceblue;
+}
+
+h4 {
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+  font-size:larger;
+  text-align: center;
+}
+
+.aligncontacto {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tel {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.header {
+  
+  
+  grid-area: header;
+  background-color: #7070709d;
+  display: flex;
+  flex-grow;
+  justify-content: center;
+  
+}
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+.menu {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+li {list-style:none;}
+
+.form{
+  width: 100%;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.form input{
+  width: 392px;
+  height: 30px;
+}
+
+.form button{
+  
+  border:none;
+  background: rgb(6, 194, 100);
+  cursor: pointer;
+}
+
+table {
+  border:2px solid gainsboro;
+  border-collapse: collapse;
+  background-color: rgb(165, 226, 205);
+  color: black;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td {
+  border:2px solid #7f7f7f;
+  padding: 5px;
+  font-weight: bold;
+}
+
+table th {
+  border:2px solid #7f7f7f;
+  padding: 10;
+  background-color: aliceblue;
+}
+
+span {
+  font-weight: bold;
+  color: #66cbb3;
+}
+
+
+
+
+.main {
+  grid-area: main;
+  background-color: #7070709d;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #7070709d;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  100px
+    "navbar"  100px
+    "main"    auto
+    "footer"  100px;
+}
+
+
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template:
+    "header  header" 100px
+    "navbar  navbar" 100px
+    "main    main"   auto
+    "footer  footer" 100px;
+}
+}
+
+
+@media (max-width: 600px) {
+  .grid-container {
+      
+      grid-template:
+      "header  header" 100px
+      "navbar  navbar" 100px
+      "main    main"   auto
+      "footer  footer" 100px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  100px
+      "navbar  navbar navbar"  100px
+      "main    main   main"    auto
+      "footer  footer footer"  100px;
+}
+
+
+}
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  100px
+      "navbar  navbar navbar"  100px
+      "main    main   main"    auto
+      "footer  footer footer"  100px;
+}
+
+.navbar {
+  grid-area: navbar;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+
+
+button {
+  background-color: #4CAF50;
+  font-size: 15px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  
+ }
+
+ button:hover {
+  background-color: #3e8e41;
+  color: white;
+ }
+ 
